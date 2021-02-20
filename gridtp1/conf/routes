@@ -13,4 +13,7 @@ GET     /message                    controllers.AsyncController.message
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-      
+# Controller de la gestion d'une marchandise dans le stock
+
+PUT     /add/item/:itemId          controllers.OrderController.addItemToStock(itemId: Long)
+
