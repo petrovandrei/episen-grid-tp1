@@ -1,0 +1,14 @@
+kafka + mongo sur docker
+
+contexte = article
+
+def addArticle(article: Article) {
+    // 1. changer le contexte
+    // 2. modifier en base => return Option(article)
+    // 3. génerer un event kafka => takes Option(article) returns Option(event)
+    // 4. publier l'event ( addArticle(statut, paramètres)
+}
+
+
+
+

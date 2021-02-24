@@ -2,7 +2,12 @@
 version: '2'
 services:
   mongo:
-    image: mongo
+    image: mongo:latest
+    container_name: mongrid
+    environment:
+      - MONGO_INITDB_DATABASE=grid
+      - MONGO_INITDB_ROOT_USERNAME=grid
+      - MONGO_INITDB_ROOT_PASSWORD=grid
     ports:
       - "27017:27017"
       

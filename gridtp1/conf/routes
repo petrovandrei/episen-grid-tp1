@@ -17,3 +17,9 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 PUT     /add/item/:itemId          controllers.OrderController.addItemToStock(itemId: Long)
 
+PUT     /add/item/test             controllers.ItemController.create
+
+PUT     /add/item                  controllers.ItemController.createFromJson
+
+GET     /item/:_id                 controllers.ItemController.findById(_id:Long)
+
