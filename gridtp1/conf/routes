@@ -15,7 +15,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 # Controller de la gestion d'une marchandise dans le stock
 
-PUT     /add/item/:itemId          controllers.OrderController.addItemToStock(itemId: Long)
+PUT     /add/item/         controllers.OrderController.addItemToStock(item: Item)
 
 PUT     /add/item/test             controllers.ItemController.create
 
